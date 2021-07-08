@@ -1,5 +1,5 @@
 {
-    "homepage": "http://kritidipto-1234.github.io/rickNmortySearch",
+    "homepage": "https://kritidipto-1234.github.io/rickNmortySearch",
     "name": "rick-morty-filter",
     "version": "0.1.0",
     "private": true,
@@ -15,7 +15,8 @@
         "web-vitals": "^1.1.2"
     },
     "scripts": {
-        "deploy:site": "gh-pages -d build",
+        "deploy:code": "git add . && git commit -m 'some changes' && git push",
+        "deploy:site": "npm run build && gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
