@@ -12,6 +12,12 @@
     margin-right: 40px;
 }
 
+@media only screen and (max-width: 600px) {
+    .Character {
+        min-width: 320px;
+        padding: 10px;
+    }
+}
 .Character .intro {
     display: flex;
     text-align: center;
