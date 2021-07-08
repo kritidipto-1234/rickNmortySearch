@@ -12,18 +12,6 @@
     margin-right: 40px;
 }
 
-@media only screen and (max-width: 600px) {
-    .Character {
-        min-width: 320px;
-        padding: 10px;
-    }
-}
-.Character .intro {
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
 .Character .name {
     font-size: 20px;
     font-weight: bolder;
@@ -33,6 +21,12 @@
     font-weight: bolder;
     color: green;
     font-size: 18px;
+}
+
+.Character .intro {
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .Character hr {
@@ -60,4 +54,22 @@
 
 .Character .info div {
     word-break: break-all;
+}
+
+@media only screen and (max-width: 600px) {
+    .Character {
+        min-width: 320px;
+    }
+    .Character img {
+        height: 80px;
+        width: 80px;
+        margin-right: 15px;
+    }
+    .Character .name {
+        width: 100%;
+        font-size: 18px;
+    }
+    .Character .statusSpecies {
+        font-size: 16px;
+    }
 }
