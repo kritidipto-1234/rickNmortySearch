@@ -6,6 +6,11 @@
     transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 600px) {
+    .Modal {
+    }
+}
+
 .overlay {
     top: 0;
     width: 100%;
