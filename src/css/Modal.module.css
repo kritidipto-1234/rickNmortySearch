@@ -3,6 +3,7 @@
     top: 50%;
     left: 50%;
     z-index: 3;
+    background-color: white;
     transform: translate(-50%, -50%);
 }
 
@@ -24,9 +25,10 @@
 }
 
 .closeBtn {
-    position: absolute;
-    right: 20px;
-    top: 10px;
+    position: relative;
     font-size: 20px;
+    left: 93%;
+    height: 20px;
+    width: 20px;
     cursor: pointer;
 }
