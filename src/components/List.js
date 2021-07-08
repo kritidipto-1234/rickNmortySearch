@@ -40,8 +40,13 @@ function List(props) {
                     Loading ...
                 </div>
             )}
-            {props.characterList.length !== 0 && !props.resultInfo.next && (
-                <div className={styles.resultEnd}>End of Results</div>
+            {props.resultInfo.details !== "quickview" &&
+                props.characterList.length !== 0 &&
+                !props.resultInfo.next && (
+                    <div className={styles.resultEnd}>End of Results</div>
+                )}
+            {props.resultInfo.details === "quickview" && (
+                <div className={styles.resultEnd}>QuickView</div>
             )}
         </Card>
     );

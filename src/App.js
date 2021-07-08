@@ -24,7 +24,10 @@ function App() {
             method: "GET",
             url: `https://rickandmortyapi.com/api/character/?name=Rick%20Sanchez`,
         });
-        setResults({ characterList: result.data.results, resultInfo: {} });
+        setResults({
+            characterList: result.data.results,
+            resultInfo: { details: "quickview" },
+        });
     }
 
     useEffect(() => {
